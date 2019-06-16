@@ -1,0 +1,11 @@
+服务说明
+[root@docker nginxfile]# docker build -t nginx:v0.0-1 ./    # 构建镜像
+[root@docker ~]# docker run --name nginx -d nginx:v0.0-1    # 启动镜像
+或映射端口
+docker run --name nginx -p 80:80 -d nginx:v0.0-1
+
+备注
+映射访问 192.168.1.7/myapp/
+myapp.zip  为项目代码文件
+172.17.0.2 容器ip
+访问如：http://172.17.0.2/myapp/index.html
