@@ -1,3 +1,6 @@
 docker build -t tomcat:v0.0-1 ./    # 构建镜像
 docker run -d -p 8080:8080 --name tomcat tomcat:v0.0-1	# 运行容器
 访问：http://192.168.1.7:8080/
+k8s访问
+  http://192.168.1.5:30081
+  http://mytomcat.master.com:30081
