@@ -9,3 +9,6 @@ docker run --name nginx -p 80:80 -d nginx:v0.0-1
 myapp.zip  为项目代码文件
 172.17.0.2 容器ip
 访问如：http://172.17.0.2/myapp/index.html
+k8s访问
+   service: http://192.168.1.5:30080/myapp/index.html
+   ingress: http://nginx.master.com:30080/myapp/index.html
